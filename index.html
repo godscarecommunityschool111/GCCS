@@ -14,28 +14,22 @@ header p{position:relative; z-index:2; opacity:0.9;}
 .motto{display:inline-block; margin-top:15px; background:gold; color:#5a2e0e; padding:8px 28px; border-radius:30px; font-weight:700; font-size:14px; position:relative; z-index:2; box-shadow:0 4px 15px rgba(0,0,0,0.3);}
 .top-info{display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:20px; position:relative; z-index:2;}
 .top-info span{background:rgba(255,255,255,0.15); backdrop-filter:blur(5px); border:1px solid rgba(255,255,255,0.3); padding:6px 14px; border-radius:20px; font-size:12px; font-weight:600;}
-
 .section{margin:25px 15px; background:white; padding:28px; border-radius:18px; box-shadow:0 8px 25px rgba(90,46,14,0.08); border:1px solid #f5e6d3;}
 .section h2{color:#8B4513; font-size:22px; margin-bottom:15px; display:flex; align-items:center; gap:10px;}
 .section h2::before{content:""; width:5px; height:28px; background:gold; border-radius:3px; display:inline-block;}
-
 .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:18px; margin:25px 15px;}
 .card{background:white; padding:22px; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.07); border-left:5px solid #8B4513; transition:0.3s;}
 .card:hover{transform:translateY(-5px); box-shadow:0 12px 30px rgba(0,0,0,0.12);}
 .card h3{color:#8B4513; font-size:16px; margin-bottom:8px;}
 .card p{font-size:14px; color:#5a5a5a; line-height:1.6;}
-
 .gallery-title{text-align:center; padding:10px 15px;}
 .gallery{display:flex; flex-wrap:wrap; justify-content:center; gap:18px; padding:20px; background:linear-gradient(#fff7e8, #fdf8f1);}
 .gallery img{width:320px; height:240px; object-fit:cover; border-radius:18px; border:4px solid white; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:0.3s;}
 .gallery img:hover{transform:scale(1.03);}
-
 .director{background:linear-gradient(135deg,#3b1f0a, #8B4513); color:white; margin:25px 15px; padding:30px; border-radius:20px; display:flex; flex-wrap:wrap; gap:25px; align-items:center; box-shadow:0 10px 30px rgba(90,46,14,0.3);}
 .director-text{flex:1; min-width:260px;}
 .director h2{color:gold;}
-
 .testimony{margin:25px 15px; background:linear-gradient(135deg,#fff9e6, #ffecb3); padding:22px; border-radius:16px; border-left:6px solid gold; font-style:italic; color:#5a2e0e;}
-
 .admission{background:linear-gradient(135deg,#8B4513, #d47b2c); color:white; margin:25px 15px; padding:35px 25px; border-radius:20px; text-align:center; box-shadow:0 10px 30px rgba(139,69,19,0.3);}
 .admission h2{color:white; justify-content:center;}
 .admission h2::before{background:white;}
@@ -43,12 +37,12 @@ header p{position:relative; z-index:2; opacity:0.9;}
 .btn-call{background:white; color:#8B4513;}
 .btn-wa{background:#25D366; color:white;}
 .btn:hover{transform:translateY(-2px); box-shadow:0 6px 15px rgba(0,0,0,0.2);}
-
 .contact{background:#1f1308; color:#e8dccf; text-align:center; padding:40px 20px;}
 .contact h2{color:gold; justify-content:center;}
 .contact p{margin:8px 0; font-size:14px;}
 .contact b{color:white;}
 footer{background:black; color:#888; text-align:center; padding:18px; font-size:11px; letter-spacing:1px;}
+input, select, textarea{width:100%; font-family:'Poppins', sans-serif;}
 </style>
 </head>
 <body>
@@ -128,6 +122,37 @@ footer{background:black; color:#888; text-align:center; padding:18px; font-size:
 <div class="testimony">
 "My child loves school now. The teachers are patient and the school is always clean. I see real improvement in discipline and English speaking. God's Care is truly a good school for our community."
 <br><b>— Happy Parent, Banda Zone B1</b>
+</div>
+
+<!-- NEW EMAIL INQUIRY FORM - ONLY NEW THING ADDED -->
+<div class="section" style="background:linear-gradient(135deg, #fffaf3, #fff); border:2px solid #f0d5b5;">
+<h2>📧 Inquire Via Email</h2>
+<p style="font-size:14px; color:#666; margin-bottom:20px;">Are you a parent looking for admission? Fill this form and we will reply within hours.</p>
+<form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST" style="display:grid; gap:15px;">
+<input type="hidden" name="_subject" value="NEW PARENT INQUIRY - God's Care Website!">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="text" name="Parent Name" placeholder="Your Full Name (Parent)" required style="padding:14px; border-radius:10px; border:1px solid #e5c9a5; font-size:14px;">
+<input type="tel" name="Phone Number" placeholder="Your Phone / WhatsApp Number" required style="padding:14px; border-radius:10px; border:1px solid #e5c9a5; font-size:14px;">
+<input type="email" name="Email" placeholder="Your Email (optional)" style="padding:14px; border-radius:10px; border:1px solid #e5c9a5; font-size:14px;">
+<select name="Class Interested" required style="padding:14px; border-radius:10px; border:1px solid #e5c9a5; font-size:14px;">
+<option value="">Select Class Interested</option>
+<option>Baby Class</option>
+<option>Middle Class</option>
+<option>Top Class</option>
+<option>P1</option>
+<option>P2</option>
+<option>P3</option>
+<option>P4</option>
+<option>P5</option>
+<option>P6</option>
+<option>P7</option>
+<option>Boarding Section</option>
+</select>
+<textarea name="Message" placeholder="Your Message..." required rows="4" style="padding:14px; border-radius:10px; border:1px solid #e5c9a5; font-size:14px;"></textarea>
+<button type="submit" style="background:#8B4513; color:white; padding:14px; border:none; border-radius:30px; font-weight:700; cursor:pointer; font-size:15px;">📨 SEND INQUIRY NOW</button>
+<p style="font-size:11px; color:#999; text-align:center;">Inquiry will be sent directly to school email.</p>
+</form>
 </div>
 
 <div class="admission">
