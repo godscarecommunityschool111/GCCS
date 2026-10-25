@@ -1,137 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>God's Care Community School Banda - With God We Excel</title>
+<title>God's Care Community School Banda</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="God's Care Community School Banda Zone B1 - Best Nursery & Primary School in Banda, Mixed Day & Boarding">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body{font-family: 'Segoe UI', Arial, sans-serif; margin:0; background:#fffaf3; color:#333; line-height:1.6;}
-header{background: linear-gradient(#8B4513, #A0522D); color:white; text-align:center; padding:30px 15px; border-bottom:5px solid gold;}
-header h1{margin:0; font-size:28px; letter-spacing:1px;}
-header .motto{background:gold; color:#8B4513; display:inline-block; padding:5px 20px; border-radius:20px; font-weight:bold; margin-top:10px;}
-.badge{display:inline-block; background:white; color:#8B4513; padding:3px 12px; border-radius:15px; font-size:12px; margin:5px; font-weight:bold;}
-.welcome{background:white; margin:20px; padding:25px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-left:6px solid #8B4513;}
-.welcome h2{color:#8B4513; margin-top:0;}
-.grid{display:flex; flex-wrap:wrap; gap:15px; justify-content:center; padding:15px;}
-.card{background:white; width:280px; padding:20px; border-radius:12px; box-shadow:0 3px 8px rgba(0,0,0,0.1); text-align:center; border-top:4px solid #8B4513;}
-.card h3{color:#8B4513; margin:10px 0;}
-.photos{display:flex; flex-wrap:wrap; justify-content:center; gap:15px; padding:20px; background:#fff0db;}
-.photos img{width:310px; height:230px; object-fit:cover; border-radius:12px; border:3px solid white; box-shadow:0 4px 8px rgba(0,0,0,0.2);}
-.director{background:#8B4513; color:white; margin:20px; padding:25px; border-radius:15px; display:flex; flex-wrap:wrap; align-items:center; gap:20px;}
-.director img{width:150px; height:150px; background:white; border-radius:50%; object-fit:cover; border:4px solid gold;}
-.testimony{background:gold; margin:20px; padding:20px; border-radius:15px; text-align:center; font-style:italic;}
-.testimony b{display:block; margin-top:10px; color:#8B4513;}
-.admission{background: linear-gradient(#fffae6, #fff0b3); border:2px dashed #8B4513; margin:20px; padding:25px; border-radius:15px; text-align:center;}
-.admission h2{color:#8B4513;}
-.btn{background:#8B4513; color:white; padding:12px 25px; border-radius:25px; text-decoration:none; display:inline-block; font-weight:bold; margin:10px;}
-.btn-whatsapp{background:#25D366;}
-.contact{background:#2b1a0e; color:white; text-align:center; padding:30px 15px;}
-.contact a{color:gold; text-decoration:none; font-weight:bold;}
-footer{background:black; color:gray; text-align:center; padding:15px; font-size:12px;}
+*{margin:0;padding:0;box-sizing:border-box; font-family:'Poppins', sans-serif;}
+body{background:#fdf8f1; color:#3a2a1a;}
+header{background:linear-gradient(135deg,#5a2e0e 0%, #8B4513 50%, #b5651d 100%); color:white; text-align:center; padding:35px 15px; position:relative; overflow:hidden;}
+header::after{content:""; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 70%);}
+header h1{font-size:30px; font-weight:700; position:relative; z-index:2; letter-spacing:1px;}
+header p{position:relative; z-index:2; opacity:0.9;}
+.motto{display:inline-block; margin-top:15px; background:gold; color:#5a2e0e; padding:8px 28px; border-radius:30px; font-weight:700; font-size:14px; position:relative; z-index:2; box-shadow:0 4px 15px rgba(0,0,0,0.3);}
+.top-info{display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:20px; position:relative; z-index:2;}
+.top-info span{background:rgba(255,255,255,0.15); backdrop-filter:blur(5px); border:1px solid rgba(255,255,255,0.3); padding:6px 14px; border-radius:20px; font-size:12px; font-weight:600;}
+
+.section{margin:25px 15px; background:white; padding:28px; border-radius:18px; box-shadow:0 8px 25px rgba(90,46,14,0.08); border:1px solid #f5e6d3;}
+.section h2{color:#8B4513; font-size:22px; margin-bottom:15px; display:flex; align-items:center; gap:10px;}
+.section h2::before{content:""; width:5px; height:28px; background:gold; border-radius:3px; display:inline-block;}
+
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:18px; margin:25px 15px;}
+.card{background:white; padding:22px; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.07); border-left:5px solid #8B4513; transition:0.3s;}
+.card:hover{transform:translateY(-5px); box-shadow:0 12px 30px rgba(0,0,0,0.12);}
+.card h3{color:#8B4513; font-size:16px; margin-bottom:8px;}
+.card p{font-size:14px; color:#5a5a5a; line-height:1.6;}
+
+.gallery-title{text-align:center; padding:10px 15px;}
+.gallery{display:flex; flex-wrap:wrap; justify-content:center; gap:18px; padding:20px; background:linear-gradient(#fff7e8, #fdf8f1);}
+.gallery img{width:320px; height:240px; object-fit:cover; border-radius:18px; border:4px solid white; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:0.3s;}
+.gallery img:hover{transform:scale(1.03);}
+
+.director{background:linear-gradient(135deg,#3b1f0a, #8B4513); color:white; margin:25px 15px; padding:30px; border-radius:20px; display:flex; flex-wrap:wrap; gap:25px; align-items:center; box-shadow:0 10px 30px rgba(90,46,14,0.3);}
+.director-text{flex:1; min-width:260px;}
+.director h2{color:gold;}
+
+.testimony{margin:25px 15px; background:linear-gradient(135deg,#fff9e6, #ffecb3); padding:22px; border-radius:16px; border-left:6px solid gold; font-style:italic; color:#5a2e0e;}
+
+.admission{background:linear-gradient(135deg,#8B4513, #d47b2c); color:white; margin:25px 15px; padding:35px 25px; border-radius:20px; text-align:center; box-shadow:0 10px 30px rgba(139,69,19,0.3);}
+.admission h2{color:white; justify-content:center;}
+.admission h2::before{background:white;}
+.btn{display:inline-block; padding:13px 28px; border-radius:30px; text-decoration:none; font-weight:700; margin:10px 6px; transition:0.3s; font-size:14px;}
+.btn-call{background:white; color:#8B4513;}
+.btn-wa{background:#25D366; color:white;}
+.btn:hover{transform:translateY(-2px); box-shadow:0 6px 15px rgba(0,0,0,0.2);}
+
+.contact{background:#1f1308; color:#e8dccf; text-align:center; padding:40px 20px;}
+.contact h2{color:gold; justify-content:center;}
+.contact p{margin:8px 0; font-size:14px;}
+.contact b{color:white;}
+footer{background:black; color:#888; text-align:center; padding:18px; font-size:11px; letter-spacing:1px;}
 </style>
 </head>
 <body>
 
 <header>
 <h1>GOD'S CARE COMMUNITY SCHOOL</h1>
-<p>BANDA ZONE B1, ACHOLI QUARTERS</p>
-<div class="motto">✝️ WITH GOD WE EXCEL! ✝️</div>
-<div style="margin-top:15px;">
-<span class="badge">MIXED DAY & BOARDING</span>
-<span class="badge">NURSERY & PRIMARY</span>
-<span class="badge">UNEB REGISTERED</span>
-<span class="badge">EST. BY ROSE LWAZI BATENGA</span>
+<p>BANDA ZONE B1, ACHOLI QUARTERS, KAMPALA</p>
+<div class="motto">WITH GOD WE EXCEL</div>
+<div class="top-info">
+<span>✦ MIXED DAY & BOARDING</span>
+<span>✦ NURSERY & PRIMARY</span>
+<span>✦ CHRISTIAN FOUNDED</span>
+<span>✦ COMMUNITY SCHOOL</span>
 </div>
 </header>
 
-<div class="welcome">
-<h2>🌟 Welcome to The Best School in Banda!</h2>
-<p>At <b>God's Care Community School Banda</b>, we believe every child is a gift from God with unique talents. We are a Christian-founded community school located in the heart of Banda Zone B1, providing affordable, quality education to children from Nursery to Primary Seven.</p>
-<p>We combine <b>Academic Excellence + Godly Character + Modern Facilities</b> to produce pupils who excel in PLE and in life. Our teachers are qualified, caring, and passionate.</p>
-<p><b>Why parents choose us? Because with God, we truly Excel!</b></p>
+<div class="section">
+<h2>Welcome to God's Care</h2>
+<p>Welcome to <b>God's Care Community School Banda</b>, a trusted community school founded on Christian values and a passion for excellence. Located in the heart of Banda Zone B1, Acholi Quarters, we provide a warm, safe, and stimulating environment where every child is valued, nurtured, and inspired to excel.</p>
+<br>
+<p>We believe education is more than books — it is about building character, instilling Godly morals, developing talents, and preparing children for a bright future. From Baby Class to Primary Seven, our pupils receive holistic training that balances academics, discipline, spiritual growth, and co-curricular activities.</p>
+<br>
+<p>At God's Care, <b>With God We Excel</b> is not just our motto, it is our daily reality.</p>
 </div>
 
 <div class="grid">
 <div class="card">
-<h3>📚 Excellent Academics</h3>
-<p>Strong curriculum, weekly assessments, remedial classes, and PLE focused teaching. Our pupils shine in all subjects.</p>
+<h3>📚 Academic Excellence</h3>
+<p>Well-structured curriculum, regular assessments, remedial support, and focused PLE preparation to ensure every learner performs to their best ability.</p>
 </div>
 <div class="card">
-<h3>👨‍🏫 Qualified Teachers</h3>
-<p>Trained, experienced, and God-fearing teachers who love children and give extra attention to slow learners.</p>
+<h3>👩‍🏫 Dedicated Teachers</h3>
+<p>Qualified, experienced, and compassionate teachers who understand children and give individual attention to help each child grow at their own pace.</p>
 </div>
 <div class="card">
-<h3>🏫 Day & Boarding</h3>
-<p>Safe and clean dormitories, balanced diet, and 24/7 matron care. Your child is safe at God's Care!</p>
+<h3>🏫 Day & Boarding Facility</h3>
+<p>Clean, secure, and well-supervised boarding section with caring matrons, balanced meals, and a homely environment for our boarders.</p>
 </div>
 <div class="card">
-<h3>🎨 Co-Curricular</h3>
-<p>Music, Dance & Drama, Football, Netball, Debating, Scripture Union, and Scouts for full talent development.</p>
+<h3>🎭 Talents & Skills</h3>
+<p>We nurture talents through Music Dance & Drama, football, netball, debate, Scripture Union, and clubs to build confidence and leadership.</p>
 </div>
 <div class="card">
-<h3>💰 Affordable Fees</h3>
-<p>Quality education should not be expensive. We have flexible payment plans. Bursaries for needy but bright children.</p>
+<h3>🛡️ Safe & Caring Environment</h3>
+<p>Fenced and secure compound, disciplined yet loving atmosphere, clean water, good sanitation, and strict child safety policies.</p>
 </div>
 <div class="card">
-<h3>🛡️ Child Safety</h3>
-<p>Fenced compound, security guard, first aid, clean water, and strict discipline with love.</p>
+<h3>🙏 Christian Foundation</h3>
+<p>Morning devotions, Christian values, respect, honesty, and hard work are taught daily to shape children into responsible citizens.</p>
 </div>
 </div>
 
-<div class="welcome">
-<h2>📸 Our School Life - See Our Beautiful Compound!</h2>
-<p>Our classrooms are spacious, our compound is clean and green, and our pupils are smart in their brown/orange uniform. See for yourself:</p>
+<div class="section">
+<h2>Why Parents Trust Us</h2>
+<p>Parents across Banda, Kireka, Kyambogo, and Acholi Quarters trust us because we listen, we care, and we deliver results. We maintain close communication with parents, we have small class sizes for better learning, and our compound is always clean and orderly. Your child’s future is safe with us.</p>
 </div>
 
-<div class="photos">
-<img src="20261016_174127.jpg" alt="School Building">
-<img src="20261016_174521.jpg" alt="Pupils in Class">
-<img src="20261016_174657.jpg" alt="School Compound">
+<div class="gallery-title">
+<h2 style="color:#8B4513;">📸 Life at God's Care</h2>
+<p style="font-size:14px; color:#777;">Our beautiful school compound and happy learners</p>
+</div>
+<div class="gallery">
+<img src="20261016_174127.jpg" alt="God's Care School">
+<img src="20261016_174521.jpg" alt="Classroom">
+<img src="20261016_174657.jpg" alt="Pupils">
 </div>
 
 <div class="director">
-<div style="flex:1;">
-<h2 style="color:gold; margin-top:0;">Message From The Director</h2>
-<h3 style="margin:0;">Mrs. Rose Lwazi Batenga</h3>
-<p><i>Founder & Director</i></p>
-<p>"I started God's Care Community School with a vision to give Banda children quality education with Christian values. We may be a community school, but our standards are high. Every child who joins us becomes part of God's family. Welcome to our school where With God We Excel is not just a motto, but our daily experience."</p>
+<div class="director-text">
+<h2>Message From The Director</h2>
+<h3 style="color:white; margin:5px 0;">Mrs. Rose Lwazi Batenga</h3>
+<p style="color:gold; font-size:13px; letter-spacing:1px; margin-bottom:15px;">FOUNDER & DIRECTOR</p>
+<p style="line-height:1.8; font-size:14px; opacity:0.95;">"I founded God's Care Community School with a burden to provide affordable, quality, Christ-centered education to the children of Banda. I have seen this school grow from a small vision to a place where many children now find hope and excellence. Every child who joins us becomes family. We will teach them, pray with them, guide them, and see them excel. Karibu sana to God's Care."</p>
 </div>
 </div>
 
 <div class="testimony">
-<p>"My daughter joined in Baby Class crying. Now in P3 she speaks fluent English and leads prayers. The teachers are so caring. I recommend God's Care to every parent in Banda!"</p>
-<b>- Parent, Banda Zone B1</b>
-</div>
-
-<div class="testimony" style="background:#ffe6cc;">
-<p>"We have modern facilities, bright classrooms, and we play and learn. Our prefects are disciplined. I love my school!"</p>
-<b>- Alma, Head Prefect (P7)</b>
+"My child loves school now. The teachers are patient and the school is always clean. I see real improvement in discipline and English speaking. God's Care is truly a good school for our community."
+<br><b>— Happy Parent, Banda Zone B1</b>
 </div>
 
 <div class="admission">
-<h2>🎓 ADMISSION FOR 2026 IS ONGOING!</h2>
-<p><b>We are registering from Baby Class to Primary Seven</b></p>
-<p>Day: From 300,000 UGX per term | Boarding: Affordable package with meals</p>
-<p>Requirements: Birth Certificate, 2 passport photos, Previous report card</p>
-<p><b>Limited vacancies! First come, first served!</b></p>
-<a class="btn" href="tel:0701595990">📞 CALL NOW: 0701595990</a>
-<a class="btn btn-whatsapp" href="https://wa.me/256701595990">💬 WHATSAPP US</a>
+<h2>Admission Ongoing!</h2>
+<p style="margin-top:10px;">We are admitting learners from <b>Baby Class, Middle, Top Class to P1 - P7</b></p>
+<p style="font-size:14px; opacity:0.9; margin-top:10px;">Visit our campus in Banda Zone B1 for enrollment. Come with birth certificate, 2 passport photos and previous class report. Limited places available - secure your child's place today!</p>
+<div style="margin-top:20px;">
+<a class="btn btn-call" href="tel:0701595990">📞 CALL: 0701595990</a>
+<a class="btn btn-wa" href="https://wa.me/256701595990">💬 WHATSAPP US</a>
+</div>
 </div>
 
 <div class="contact">
-<h2 style="color:gold;">Contact Us Today</h2>
-<p>📍 <b>Location:</b> Banda Zone B1, Acholi Quarters, Near Banda Market, Kampala</p>
-<p>📞 <b>Phone:</b> 0701595990 / 0776955990 / 0701595990</p>
-<p>📧 <b>Director:</b> Rose Lwazi Batenga</p>
+<h2>Find Us</h2>
+<p>📍 <b>Location:</b> Banda Zone B1, Acholi Quarters, Near Banda Market, Nakawa Division, Kampala</p>
+<p>📞 <b>Phone:</b> 0701595990 / 0776955990</p>
+<p>👩‍💼 <b>Director:</b> Mrs. Rose Lwazi Batenga</p>
 <p>🌐 <b>Website:</b> godscarecommunityschool111.github.io/godscarecommunityschoolbanda/</p>
-<p>⏰ <b>Office Hours:</b> Monday - Saturday, 7:30am - 5:00pm</p>
+<p>🕒 <b>Office Hours:</b> Monday - Saturday, 7:30am - 5:00pm</p>
 <br>
-<h3 style="color:gold;">WITH GOD WE EXCEL!</h3>
-<p><i>God's Care Community School Banda - The Pride of Banda Zone B1</i></p>
+<p style="color:gold; font-weight:700; font-size:16px; letter-spacing:2px;">WITH GOD WE EXCEL!</p>
 </div>
 
 <footer>
-&copy; 2026 God's Care Community School Banda. Built with love for Banda Community.
+COPYRIGHT © 2026 GOD'S CARE COMMUNITY SCHOOL BANDA — BUILT FOR THE COMMUNITY WITH LOVE
 </footer>
 
 </body>
