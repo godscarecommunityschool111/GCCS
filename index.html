@@ -3,39 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>God's Care Community School</title>
+<title>God's Care Community School - Banda Zone B1</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 <style>
-body{font-family:Arial;margin:0;background:#f8f9fa}
-header{background:#1a5a2a;color:white;padding:25px;text-align:center}
-.container{max-width:800px;margin:auto;padding:15px}
-.card{background:white;padding:20px;border-radius:10px;margin-bottom:15px;box-shadow:0 2px 5px #ccc}
-h2{color:#1a5a2a}
-img{width:100%;border-radius:8px;margin-top:10px}
-.btn{background:#1a5a2a;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;display:inline-block}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#FFFFFF;color:#4B2E1F;line-height:1.7}
+header{background:linear-gradient(135deg,#0F6B3A 0%,#1A8C4A 100%);color:#FFFFFF;padding:30px 15px 50px;text-align:center;position:relative}
+header h1{font-family:'Merriweather',serif;font-size:33px;letter-spacing:0.3px}
+header .sub{margin-top:8px;font-size:15px;opacity:0.95}
+.motto{margin-top:14px;display:inline-block;background:#FF7A00;color:white;padding:7px 20px;border-radius:30px;font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.top-bar{margin-top:18px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.top-bar span{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);padding:6px 14px;border-radius:20px;font-size:12px}
+.section{margin:22px 14px;background:#FFFFFF;border-radius:16px;padding:22px;box-shadow:0 6px 24px rgba(75,46,31,0.08);border-top:4px solid #0F6B3A}
+.section.orange-top{border-top-color:#FF7A00}
+.section.brown-top{border-top-color:#4B2E1F}
+.section h2{font-family:'Merriweather',serif;color:#4B2E1F;font-size:22px;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.section h2 .dot{width:8px;height:24px;background:#FF7A00;border-radius:4px;display:inline-block}
+.section h2 .dot.green{background:#0F6B3A}
+.highlight{background:linear-gradient(135deg,#FFF4E6,#FFE5CC);border-left:4px solid #FF7A00;padding:14px;border-radius:10px;margin:14px 0;color:#4B2E1F}
+.btn{display:inline-block;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700;font-size:14px;margin:6px 6px 0 0;transition:0.2s}
+.btn-green{background:#0F6B3A;color:white;box-shadow:0 4px 12px rgba(15,107,58,0.25)}
+.btn-orange{background:#FF7A00;color:white;box-shadow:0 4px 12px rgba(255,122,0,0.25)}
+.btn-brown{background:#4B2E1F;color:white}
+.gallery{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:12px;border:2px solid #f0e6d8}
+@media(max-width:650px){.gallery{grid-template-columns:1fr}.gallery img{height:230px}}
+ul{margin:10px 0 0 18px}
+ul li{margin-bottom:7px;font-size:14px}
+ul li::marker{color:#FF7A00}
+.director-card{display:flex;gap:15px;background:#FFFBF5;border:1px solid #f0e6d8;padding:16px;border-radius:12px;margin-top:12px}
+.avatar{width:62px;height:62px;background:#0F6B3A;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex-shrink:0;border:3px solid #FF7A00}
+.form-group{margin-bottom:13px}
+.form-group label{font-size:13px;font-weight:700;color:#4B2E1F;display:block;margin-bottom:5px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px;border:2px solid #E8DDD0;border-radius:10px;font-family:inherit;font-size:14px;background:#FFFEFB}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#FF7A00}
+footer{background:#4B2E1F;color:#F5E6D3;text-align:center;padding:28px 15px;margin-top:35px}
+footer strong{color:#FF7A00}
+.badge{background:#FF7A00;color:white;font-size:11px;padding:4px 10px;border-radius:12px;margin-left:8px}
+.badge-green{background:#0F6B3A}
 </style>
 </head>
 <body>
 <header>
 <h1>God's Care Community School</h1>
-<p>Mixed Day & Boarding - Banda Zone B1, Kampala</p>
-<p>Director: Rose Lwazi Batenga</p>
+<div class="sub">A Mixed Day & Boarding Nursery & Primary School - Banda Zone B1, Kampala</div>
+<div class="motto">Education • Care • Community • Godliness</div>
+<div class="top-bar">
+<span>📍 Banda Zone B1, Nakawa</span>
+<span>👩‍🏫 Rose Lwazi Batenga - Director</span>
+<span>🎓 Baby Class to P7</span>
+</div>
 </header>
-<div class="container">
-<div class="card">
-<h2>Welcome</h2>
-<p>Admissions open for Baby, Middle, Top Class, P1-P7. Quality education for vulnerable children.</p>
-<a class="btn" href="tel:+256779304261">Call 0779 304 261</a>
+
+<div class="section">
+<h2><span class="dot green"></span> Welcome to God's Care</h2>
+<p>God's Care Community School is a <strong>community-founded mixed day and boarding nursery and primary school</strong> located in Banda Zone B1, Kampala. Founded by <strong>Rose Lwazi Batenga</strong>, we provide affordable, quality education with Christian values for vulnerable children.</p>
+<div class="highlight">
+<strong style="color:#0F6B3A">Admissions 2026 Open!</strong> Baby Class, Middle Class, Top Class, P1-P7. Day & Boarding. <span class="badge">Limited Boarding Slots</span>
 </div>
-<div class="card">
-<h2>Our School Photos</h2>
-<img src="20261016_174127.jpg">
-<img src="20261016_174521.jpg">
-<img src="20261016_174657.jpg">
+<p style="margin-top:10px">
+<a class="btn btn-green" href="tel:+256779304261">📞 Call 0779 304 261</a>
+<a class="btn btn-orange" href="https://wa.me/256779304261">💬 WhatsApp Us</a>
+</p>
 </div>
-<div class="card">
-<h2>Contact</h2>
-<p>Banda Zone B1, Kampala<br>Phone: 0779 304 261 / 0200 911 114</p>
+
+<div class="section brown-top">
+<h2><span class="dot"></span> Director's Message</h2>
+<div class="director-card">
+<div class="avatar">RB</div>
+<div>
+<strong>Rose Lwazi Batenga - Director & Founder</strong><br>
+<span style="font-size:13px;color:#6b5a4a">"We started this school to give hope to children who had no hope. In God's Care, every child belongs. We teach, we love, we discipline, and we build future leaders with godliness. Welcome to our family."</span>
 </div>
 </div>
+</div>
+
+<div class="section orange-top">
+<h2><span class="dot"></span> Our School Life Gallery</h2>
+<p style="font-size:14px">Real photos from our compound - Banda Zone B1</p>
+<div class="gallery">
+<img src="20261016_174127.jpg" alt="School Building">
+<img src="20261016_174521.jpg" alt="Pupils Learning">
+<img src="20261016_174657.jpg" alt="School Activities">
+</div>
+</div>
+
+<div class="section">
+<h2><span class="dot green"></span> Classes We Offer</h2>
+<ul>
+<li><strong>Nursery:</strong> Baby (3yrs), Middle (4yrs), Top (5yrs) — Early reading, numbers, writing, Bible, play-based learning</li>
+<li><strong>Lower Primary:</strong> P1-P3 — Literacy, numeracy, science, SST, CRE with individual attention</li>
+<li><strong>Upper Primary:</strong> P4-P7 — Intensive PLE preparation, coaching, guidance & counselling</li>
+<li><strong>Boarding Section:</strong> Secure dorms for boys & girls, matron/patron 24hrs, balanced meals, evening prep, spiritual nurture <span class="badge badge-green">Day & Boarding</span></li>
+</ul>
+</div>
+
+<div class="section orange-top" style="background:#FFFBF5">
+<h2><span class="dot"></span> Parent Registration - Book a Place Now</h2>
+<p style="font-size:14px;margin-bottom:14px">Fill this form and it will send directly to the Director on WhatsApp. We will call you within 24 hours.</p>
+<form onsubmit="sendToWhatsApp();return false;">
+<div class="form-group"><label>Parent / Guardian Name *</label><input type="text" id="pname" required placeholder="e.g. John Mugisha"></div>
+<div class="form-group"><label>Phone Number *</label><input type="tel" id="pphone" required placeholder="0779 304 261"></div>
+<div class="form-group"><label>Child's Full Name *</label><input type="text" id="cname" required placeholder="Child's name"></div>
+<div class="form-group"><label>Class Applying For *</label>
+<select id="cclass" required>
+<option value="">-- Select --</option>
+<option>Baby Class</option><option>Middle Class</option><option>Top Class</option>
+<option>P1</option><option>P2</option><option>P3</option><option>P4</option><option>P5</option><option>P6</option><option>P7</option>
+</select></div>
+<div class="form-group"><label>Day or Boarding? *</label>
+<select id="ctype" required><option value="">-- Select --</option><option>Day</option><option>Boarding</option></select></div>
+<div class="form-group"><label>Message</label><textarea id="pmsg" placeholder="Ask about fees, transport, requirements..."></textarea></div>
+<button type="submit" class="btn btn-orange" style="width:100%;border:none;cursor:pointer;font-size:16px;padding:14px">📩 Submit via WhatsApp</button>
+</form>
+</div>
+
+<div class="section">
+<h2><span class="dot green"></span> Why Banda Parents Trust Us</h2>
+<ul>
+<li>White, Green, Coffee Brown & Orange — our true brand, representing purity, growth, stability and joy</li>
+<li>Founded by local mother Rose Lwazi Batenga — understands community needs</li>
+<li>Affordable fees with flexible payment plan — no child sent home for fees without discussion</li>
+<li>Christian discipline, love, and academic excellence</li>
+<li>Inside Banda Zone B1 — children walk safely, no expensive transport</li>
+<li>Small class sizes, qualified teachers</li>
+</ul>
+</div>
+
+<div class="section brown-top">
+<h2><span class="dot"></span> Fees & Requirements</h2>
+<p style="font-size:14px"><strong>Requirements:</strong> Birth certificate / clinic card, 2 passport photos, parent ID. For boarding: mattress, blanket, suitcase, plates, etc. Full list given at school.</p>
+<p style="font-size:14px;margin-top:8px">We offer bursaries for most vulnerable. Call Director for 2026 fees breakdown.</p>
+<a class="btn btn-brown" href="tel:+256779304261">Ask for Fees Details</a>
+</div>
+
+<div class="section">
+<h2><span class="dot green"></span> Contact & Find Us</h2>
+<p style="font-size:14px;line-height:1.8">
+<strong style="color:#0F6B3A">Location:</strong> Banda Zone B1, Near Banda Trading Centre, Nakawa, Kampala<br>
+<strong style="color:#4B2E1F">Director:</strong> Rose Lwazi Batenga<br>
+<strong style="color:#FF7A00">Phone:</strong> 0779 304 261 / 0200 911 114<br>
+<strong>WhatsApp:</strong> 0779 304 261<br>
+<strong>Email:</strong> godscarecommunityschool@gmail.com
+</p>
+<a class="btn btn-green" href="https://maps.google.com/?q=Banda+Zone+B1+Kampala" target="_blank">📍 Open Google Maps</a>
+</div>
+
+<footer>
+<p><strong style="font-size:16px">God's Care Community School</strong></p>
+<p>Banda Zone B1 - Building Leaders with Love & Godliness</p>
+<p style="margin-top:10px;font-size:11px;opacity:0.7">Brand Colors: White #FFFFFF | Green #0F6B3A | Coffee Brown #4B2E1F | Orange #FF7A00<br>© 2026 God's Care Community School | godscarecommunityschool111.github.io/GCCS/</p>
+</footer>
+
+<script>
+function sendToWhatsApp(){
+var a=document.getElementById('pname').value;
+var b=document.getElementById('pphone').value;
+var c=document.getElementById('cname').value;
+var d=document.getElementById('cclass').value;
+var e=document.getElementById('ctype').value;
+var f=document.getElementById('pmsg').value;
+var msg="*NEW REGISTRATION - God's Care Community School*%0A%0AParent: "+a+"%0APhone: "+b+"%0AChild: "+c+"%0AClass: "+d+"%0AType: "+e+"%0AMessage: "+f;
+window.open("https://wa.me/256779304261?text="+msg,"_blank");
+}
+</script>
 </body>
 </html>
