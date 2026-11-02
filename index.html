@@ -8,8 +8,8 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',sans-serif;background:#FFFFFF;color:#4B2E1F;line-height:1.7}
-header{background:linear-gradient(135deg,#0F6B3A 0%,#1A8C4A 100%);color:#FFFFFF;padding:30px 15px 50px;text-align:center;position:relative}
-header h1{font-family:'Merriweather',serif;font-size:33px;letter-spacing:0.3px}
+header{background:linear-gradient(135deg,#0F6B3A 0%,#1A8C4A 100%);color:#FFFFFF;padding:30px 15px 50px;text-align:center}
+header h1{font-family:'Merriweather',serif;font-size:33px}
 header .sub{margin-top:8px;font-size:15px;opacity:0.95}
 .motto{margin-top:14px;display:inline-block;background:#FF7A00;color:white;padding:7px 20px;border-radius:30px;font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase}
 .top-bar{margin-top:18px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
@@ -21,7 +21,7 @@ header .sub{margin-top:8px;font-size:15px;opacity:0.95}
 .section h2 .dot{width:8px;height:24px;background:#FF7A00;border-radius:4px;display:inline-block}
 .section h2 .dot.green{background:#0F6B3A}
 .highlight{background:linear-gradient(135deg,#FFF4E6,#FFE5CC);border-left:4px solid #FF7A00;padding:14px;border-radius:10px;margin:14px 0;color:#4B2E1F}
-.btn{display:inline-block;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700;font-size:14px;margin:6px 6px 0 0;transition:0.2s}
+.btn{display:inline-block;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700;font-size:14px;margin:6px 6px 0 0}
 .btn-green{background:#0F6B3A;color:white;box-shadow:0 4px 12px rgba(15,107,58,0.25)}
 .btn-orange{background:#FF7A00;color:white;box-shadow:0 4px 12px rgba(255,122,0,0.25)}
 .btn-brown{background:#4B2E1F;color:white}
@@ -62,8 +62,9 @@ footer strong{color:#FF7A00}
 <strong style="color:#0F6B3A">Admissions 2026 Open!</strong> Baby Class, Middle Class, Top Class, P1-P7. Day & Boarding. <span class="badge">Limited Boarding Slots</span>
 </div>
 <p style="margin-top:10px">
-<a class="btn btn-green" href="tel:+256779304261">📞 Call 0779 304 261</a>
-<a class="btn btn-orange" href="https://wa.me/256779304261">💬 WhatsApp Us</a>
+<a class="btn btn-green" href="tel:+256776955990">📞 Call 0776955990</a>
+<a class="btn btn-orange" href="https://wa.me/256776955990">💬 WhatsApp 0776955990</a>
+<a class="btn btn-brown" href="tel:+256701595990">📞 Call 0701595990</a>
 </p>
 </div>
 
@@ -91,19 +92,19 @@ footer strong{color:#FF7A00}
 <div class="section">
 <h2><span class="dot green"></span> Classes We Offer</h2>
 <ul>
-<li><strong>Nursery:</strong> Baby (3yrs), Middle (4yrs), Top (5yrs) — Early reading, numbers, writing, Bible, play-based learning</li>
-<li><strong>Lower Primary:</strong> P1-P3 — Literacy, numeracy, science, SST, CRE with individual attention</li>
-<li><strong>Upper Primary:</strong> P4-P7 — Intensive PLE preparation, coaching, guidance & counselling</li>
-<li><strong>Boarding Section:</strong> Secure dorms for boys & girls, matron/patron 24hrs, balanced meals, evening prep, spiritual nurture <span class="badge badge-green">Day & Boarding</span></li>
+<li><strong>Nursery:</strong> Baby (3yrs), Middle (4yrs), Top (5yrs)</li>
+<li><strong>Lower Primary:</strong> P1-P3</li>
+<li><strong>Upper Primary:</strong> P4-P7 — PLE preparation</li>
+<li><strong>Boarding Section:</strong> Secure dorms, matron/patron, meals, prep <span class="badge badge-green">Day & Boarding</span></li>
 </ul>
 </div>
 
 <div class="section orange-top" style="background:#FFFBF5">
 <h2><span class="dot"></span> Parent Registration - Book a Place Now</h2>
-<p style="font-size:14px;margin-bottom:14px">Fill this form and it will send directly to the Director on WhatsApp. We will call you within 24 hours.</p>
+<p style="font-size:14px;margin-bottom:14px">Fill this form and it will send directly to the Director on WhatsApp (0776955990).</p>
 <form onsubmit="sendToWhatsApp();return false;">
 <div class="form-group"><label>Parent / Guardian Name *</label><input type="text" id="pname" required placeholder="e.g. John Mugisha"></div>
-<div class="form-group"><label>Phone Number *</label><input type="tel" id="pphone" required placeholder="0779 304 261"></div>
+<div class="form-group"><label>Phone Number *</label><input type="tel" id="pphone" required placeholder="Your number"></div>
 <div class="form-group"><label>Child's Full Name *</label><input type="text" id="cname" required placeholder="Child's name"></div>
 <div class="form-group"><label>Class Applying For *</label>
 <select id="cclass" required>
@@ -113,28 +114,9 @@ footer strong{color:#FF7A00}
 </select></div>
 <div class="form-group"><label>Day or Boarding? *</label>
 <select id="ctype" required><option value="">-- Select --</option><option>Day</option><option>Boarding</option></select></div>
-<div class="form-group"><label>Message</label><textarea id="pmsg" placeholder="Ask about fees, transport, requirements..."></textarea></div>
+<div class="form-group"><label>Message</label><textarea id="pmsg" placeholder="Ask about fees..."></textarea></div>
 <button type="submit" class="btn btn-orange" style="width:100%;border:none;cursor:pointer;font-size:16px;padding:14px">📩 Submit via WhatsApp</button>
 </form>
-</div>
-
-<div class="section">
-<h2><span class="dot green"></span> Why Banda Parents Trust Us</h2>
-<ul>
-<li>White, Green, Coffee Brown & Orange — our true brand, representing purity, growth, stability and joy</li>
-<li>Founded by local mother Rose Lwazi Batenga — understands community needs</li>
-<li>Affordable fees with flexible payment plan — no child sent home for fees without discussion</li>
-<li>Christian discipline, love, and academic excellence</li>
-<li>Inside Banda Zone B1 — children walk safely, no expensive transport</li>
-<li>Small class sizes, qualified teachers</li>
-</ul>
-</div>
-
-<div class="section brown-top">
-<h2><span class="dot"></span> Fees & Requirements</h2>
-<p style="font-size:14px"><strong>Requirements:</strong> Birth certificate / clinic card, 2 passport photos, parent ID. For boarding: mattress, blanket, suitcase, plates, etc. Full list given at school.</p>
-<p style="font-size:14px;margin-top:8px">We offer bursaries for most vulnerable. Call Director for 2026 fees breakdown.</p>
-<a class="btn btn-brown" href="tel:+256779304261">Ask for Fees Details</a>
 </div>
 
 <div class="section">
@@ -142,8 +124,9 @@ footer strong{color:#FF7A00}
 <p style="font-size:14px;line-height:1.8">
 <strong style="color:#0F6B3A">Location:</strong> Banda Zone B1, Near Banda Trading Centre, Nakawa, Kampala<br>
 <strong style="color:#4B2E1F">Director:</strong> Rose Lwazi Batenga<br>
-<strong style="color:#FF7A00">Phone:</strong> 0779 304 261 / 0200 911 114<br>
-<strong>WhatsApp:</strong> 0779 304 261<br>
+<strong style="color:#FF7A00">Phone 1:</strong> 0776955990<br>
+<strong style="color:#FF7A00">Phone 2:</strong> 0701595990<br>
+<strong>WhatsApp:</strong> 0776955990 / 0701595990<br>
 <strong>Email:</strong> godscarecommunityschool@gmail.com
 </p>
 <a class="btn btn-green" href="https://maps.google.com/?q=Banda+Zone+B1+Kampala" target="_blank">📍 Open Google Maps</a>
@@ -152,7 +135,7 @@ footer strong{color:#FF7A00}
 <footer>
 <p><strong style="font-size:16px">God's Care Community School</strong></p>
 <p>Banda Zone B1 - Building Leaders with Love & Godliness</p>
-<p style="margin-top:10px;font-size:11px;opacity:0.7">Brand Colors: White | Green | Coffee Brown | Orange<br>© 2026 God's Care Community School | godscarecommunityschool111.github.io/GCCS/</p>
+<p style="margin-top:10px;font-size:11px;opacity:0.7">© 2026 God's Care Community School | 0776955990 / 0701595990<br>godscarecommunityschool111.github.io/GCCS/</p>
 </footer>
 
 <script>
@@ -164,7 +147,7 @@ var d=document.getElementById('cclass').value;
 var e=document.getElementById('ctype').value;
 var f=document.getElementById('pmsg').value;
 var msg="*NEW REGISTRATION - God's Care Community School*%0A%0AParent: "+a+"%0APhone: "+b+"%0AChild: "+c+"%0AClass: "+d+"%0AType: "+e+"%0AMessage: "+f;
-window.open("https://wa.me/256779304261?text="+msg,"_blank");
+window.open("https://wa.me/256776955990?text="+msg,"_blank");
 }
 </script>
 </body>
