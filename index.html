@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>God's Care Community School - Banda Zone B1</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',sans-serif;background:#FFFFFF;color:#4B2E1F;line-height:1.7}
@@ -41,15 +41,27 @@ footer{background:#4B2E1F;color:#F5E6D3;text-align:center;padding:28px 15px;marg
 footer strong{color:#FF7A00}
 .badge{background:#FF7A00;color:white;font-size:11px;padding:4px 10px;border-radius:12px;margin-left:8px}
 .badge-green{background:#0F6B3A}
-/* --- FEES TABLES ADDED FROM PICTURE --- */
-.fees-table{width:100%;border-collapse:collapse;margin-top:14px;overflow:hidden;border-radius:12px}
-.fees-table th{background:#0F2A44;color:#fff;text-align:left;padding:12px 14px;font-size:13px}
+
+/* --- UNIQUE FEES DESIGN --- */
+.fees-card{border:2px solid #F0E6D8;border-radius:18px;overflow:hidden;margin-top:16px;box-shadow:0 10px 30px rgba(75,46,31,.08)}
+.fees-card-head{background:linear-gradient(90deg,#4B2E1F 0%,#0F6B3A 60%,#FF7A00 100%);color:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.fees-card-head b{font-size:14px;letter-spacing:.5px}
+.fees-card-head span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700}
+.fees-table{width:100%;border-collapse:collapse}
+.fees-table th{background:#FFF4E6;color:#4B2E1F;text-align:left;padding:12px 16px;font-size:12px;letter-spacing:1px;text-transform:uppercase}
 .fees-table th:last-child,.fees-table td:last-child{text-align:right;white-space:nowrap}
-.fees-table td{padding:12px 14px;border-bottom:1px solid #EFE7DB;font-size:14px}
-.fees-table tr:nth-child(even) td{background:#F2F6F8}
-.fees-table td b{color:#0F2A44}
+.fees-table td{padding:14px 16px;border-bottom:1px dashed #EFE7DB;font-size:14px;vertical-align:middle}
+.fees-table tr:last-child td{border-bottom:none}
+.fees-table tr:nth-child(even) td{background:#FFFBF5}
+.fees-table tr:hover td{background:#FFF4E6}
+.num{width:32px;height:32px;background:#0F6B3A;color:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0}
+.num.orange{background:#FF7A00}
+.num.brown{background:#4B2E1F}
+.price{font-weight:800;color:#0F6B3A;background:#EAF7EF;padding:6px 10px;border-radius:20px;display:inline-block;font-size:13px}
+.price.orange{color:#FF7A00;background:#FFF0DE}
+.price.hot{color:#fff;background:#FF7A00;box-shadow:0 4px 10px rgba(255,122,0,.35)}
+.fees-total{background:linear-gradient(135deg,#FFF4E6,#FFE5CC);border:1px solid #f0e6d8;border-radius:12px;padding:14px;margin-top:14px;font-size:13px}
 .fees-note{font-size:12px;color:#8a7a68;margin-top:10px}
-.fees-total{background:#FFFBF5;border:1px solid #f0e6d8;border-radius:10px;padding:12px 14px;margin-top:14px;font-size:13px}
 </style>
 </head>
 <body>
@@ -109,33 +121,42 @@ footer strong{color:#FF7A00}
 </ul>
 </div>
 
-<!-- ============ ADDED: PRIMARY SECTION REQUIREMENTS ============ -->
+<!-- ============ PRIMARY SECTION REQUIREMENTS - UNIQUE DESIGN + P7 UPDATED ============ -->
 <div class="section orange-top" id="fees">
 <h2><span class="dot"></span> Primary Section Requirements</h2>
 <p style="font-size:14px">Official fees structure — God's Care Community School <span class="badge">With God We Excel</span></p>
+
+<div class="fees-card">
+<div class="fees-card-head"><b>✦ PRIMARY SECTION REQUIREMENTS</b><span>2026 • PER TERM</span></div>
 <table class="fees-table">
-<tr><th style="width:45px">No.</th><th>ITEM</th><th>AMOUNT</th></tr>
-<tr><td>1</td><td>Registration</td><td><b>UGX 30,000</b></td></tr>
-<tr><td>2</td><td>School fees (Primary 1 – Primary 2)</td><td><b>UGX 355,000</b></td></tr>
-<tr><td>3</td><td>School fees (Primary 3 – Primary 4)</td><td><b>UGX 376,000</b></td></tr>
-<tr><td>4</td><td>School fees (Primary 5 – Primary 6)</td><td><b>UGX 400,000</b></td></tr>
-<tr><td>5</td><td>School fees (Primary 7)</td><td><b>UGX 450,000</b></td></tr>
-<tr><td>6</td><td>Boarding</td><td><b>UGX 600,000</b></td></tr>
-<tr><td>7</td><td>A set of uniforms</td><td><b>UGX 149,000</b></td></tr>
+<tr><th style="width:50px">No.</th><th>ITEM</th><th>AMOUNT</th></tr>
+<tr><td><span class="num">1</span></td><td>📝 Registration</td><td><span class="price">UGX 30,000</span></td></tr>
+<tr><td><span class="num orange">2</span></td><td>📚 School fees (Primary 1 – Primary 2)</td><td><span class="price">UGX 355,000</span></td></tr>
+<tr><td><span class="num">3</span></td><td>📚 School fees (Primary 3 – Primary 4)</td><td><span class="price">UGX 376,000</span></td></tr>
+<tr><td><span class="num orange">4</span></td><td>📚 School fees (Primary 5 – Primary 6)</td><td><span class="price">UGX 400,000</span></td></tr>
+<tr><td><span class="num brown">5</span></td><td>🎓 School fees (Primary 7) <span class="badge">PLE CLASS</span></td><td><span class="price hot">UGX 600,000</span></td></tr>
+<tr><td><span class="num">6</span></td><td>🏠 Boarding</td><td><span class="price orange">UGX 600,000</span></td></tr>
+<tr><td><span class="num orange">7</span></td><td>👕 A set of uniforms</td><td><span class="price">UGX 149,000</span></td></tr>
 </table>
-<div class="fees-total"><strong style="color:#0F6B3A">Example:</strong> P7 Day pupil = Registration 30,000 + Fees 450,000 + Uniform 149,000 = <strong>UGX 629,000</strong> (plus learning materials below). Boarding adds UGX 600,000.</div>
+</div>
+
+<div class="fees-total"><strong style="color:#0F6B3A">Example:</strong> P7 Day pupil = Registration 30,000 + Fees <strong>600,000</strong> + Uniform 149,000 = <strong>UGX 779,000</strong> (plus learning materials below). Boarding adds UGX 600,000.</div>
 <p style="margin-top:12px"><a class="btn btn-green" href="https://wa.me/256776955990?text=Hello%20God's%20Care,%20I%20want%20to%20ask%20about%20fees">💬 Ask About Fees on WhatsApp</a></p>
 </div>
 
-<!-- ============ ADDED: LEARNING MATERIALS ============ -->
+<!-- ============ LEARNING MATERIALS - UNIQUE DESIGN ============ -->
 <div class="section" id="materials">
 <h2><span class="dot green"></span> Learning Materials & Other Requirements</h2>
 <p style="font-size:14px">What your child needs for class</p>
+
+<div class="fees-card">
+<div class="fees-card-head"><b>✦ LEARNING MATERIALS</b><span>PER TERM</span></div>
 <table class="fees-table">
 <tr><th>CLASS</th><th>REQUIREMENTS</th><th>AMOUNT</th></tr>
-<tr><td><strong>Primary 1 & Primary 2</strong></td><td>Ream of paper<br>Workbooks</td><td><b>UGX 20,000</b><br><b>UGX 20,000</b></td></tr>
-<tr><td><strong>Primary 3, 4, 5 & 6</strong></td><td>Ream of paper<br>Workbooks<br>Class books & pens</td><td><b>UGX 20,000</b><br><b>UGX 20,000</b><br>—</td></tr>
+<tr><td><strong>Primary 1 & Primary 2</strong></td><td>📄 Ream of paper<br>📘 Workbooks</td><td><span class="price">UGX 20,000</span><br><span class="price">UGX 20,000</span></td></tr>
+<tr><td><strong>Primary 3, 4, 5 & 6</strong></td><td>📄 Ream of paper<br>📘 Workbooks<br>✏️ Class books & pens</td><td><span class="price">UGX 20,000</span><br><span class="price">UGX 20,000</span><br><span style="font-size:12px;color:#999">—</span></td></tr>
 </table>
+</div>
 <p class="fees-note">Note: The source document lists class books and pens for Primary 3 – Primary 6 but does not state a separate amount.</p>
 <div class="highlight"><strong style="color:#0F6B3A">Total materials for P1-P6:</strong> Ream + Workbooks = <strong>UGX 40,000</strong></div>
 </div>
