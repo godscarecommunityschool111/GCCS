@@ -42,12 +42,11 @@ footer strong{color:#FF7A00}
 .badge{background:#FF7A00;color:white;font-size:11px;padding:4px 10px;border-radius:12px;margin-left:8px}
 .badge-green{background:#0F6B3A}
 
-/* --- UNIQUE FEES DESIGN - FIXED DIGITS --- */
+/* --- FEES DESIGN - CLEAN, NO HIGHLIGHTS ON MONEY, NO EMOJIS --- */
 .fees-card{border:2px solid #F0E6D8;border-radius:18px;overflow:hidden;margin-top:16px;box-shadow:0 10px 30px rgba(75,46,31,.08)}
 .fees-card-head{background:linear-gradient(90deg,#4B2E1F 0%,#0F6B3A 60%,#FF7A00 100%);color:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .fees-card-head b{font-size:14px;letter-spacing:.5px}
 .fees-card-head span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700}
-/* FIX: allow table to scroll, never cut digits */
 .fees-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%}
 .fees-table{width:100%;border-collapse:collapse;min-width:520px}
 .fees-table th{background:#FFF4E6;color:#4B2E1F;text-align:left;padding:12px 16px;font-size:12px;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
@@ -59,16 +58,14 @@ footer strong{color:#FF7A00}
 .num{width:32px;height:32px;background:#0F6B3A;color:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0}
 .num.orange{background:#FF7A00}
 .num.brown{background:#4B2E1F}
-/* FIX: price pill no longer nowrap, full digits visible */
-.price{font-weight:800;color:#0F6B3A;background:#EAF7EF;padding:7px 10px;border-radius:20px;display:inline-block;font-size:13px;line-height:1.3;white-space:normal;word-break:keep-all;max-width:100%}
-.price.orange{color:#FF7A00;background:#FFF0DE}
-.price.hot{color:#fff;background:#FF7A00;box-shadow:0 4px 10px rgba(255,122,0,.35)}
+/* PLAIN MONEY - NO PILL, NO BACKGROUND */
+.price{font-weight:800;color:#4B2E1F;background:none;padding:0;border-radius:0;display:inline-block;font-size:14px;line-height:1.4;white-space:normal;word-break:keep-all}
 .fees-note{font-size:12px;color:#8a7a68;margin-top:10px}
 @media(max-width:650px){
   .section{padding:16px 12px;margin:16px 8px}
   .fees-table{min-width:480px}
   .fees-table td{font-size:13px;padding:12px 8px}
-  .price{font-size:12px;padding:6px 8px}
+  .price{font-size:13px}
   .section h2{font-size:19px}
 }
 </style>
@@ -134,17 +131,17 @@ footer strong{color:#FF7A00}
 <h2><span class="dot"></span> Primary Section Requirements</h2>
 <p style="font-size:14px">Official fees structure — God's Care Community School <span class="badge">With God We Excel</span></p>
 <div class="fees-card">
-<div class="fees-card-head"><b>✦ PRIMARY SECTION REQUIREMENTS</b><span>2026 • PER TERM</span></div>
+<div class="fees-card-head"><b>PRIMARY SECTION REQUIREMENTS</b><span>2026 • PER TERM</span></div>
 <div class="fees-scroll">
 <table class="fees-table">
 <tr><th style="width:50px">No.</th><th>ITEM</th><th>AMOUNT</th></tr>
-<tr><td><span class="num">1</span></td><td>📝 Registration</td><td><span class="price">UGX 30,000</span></td></tr>
-<tr><td><span class="num orange">2</span></td><td>📚 School fees (Primary 1 – Primary 2)</td><td><span class="price">UGX 355,000</span></td></tr>
-<tr><td><span class="num">3</span></td><td>📚 School fees (Primary 3 – Primary 4)</td><td><span class="price">UGX 376,000</span></td></tr>
-<tr><td><span class="num orange">4</span></td><td>📚 School fees (Primary 5 – Primary 6)</td><td><span class="price">UGX 400,000</span></td></tr>
-<tr><td><span class="num brown">5</span></td><td>🎓 School fees (Primary 7) <span class="badge">PLE CLASS</span></td><td><span class="price hot">UGX 600,000</span></td></tr>
-<tr><td><span class="num">6</span></td><td>🏠 Boarding</td><td><span class="price orange">UGX 600,000</span></td></tr>
-<tr><td><span class="num orange">7</span></td><td>👕 A set of uniforms</td><td><span class="price">UGX 149,000</span></td></tr>
+<tr><td><span class="num">1</span></td><td>Registration</td><td><span class="price">UGX 30,000</span></td></tr>
+<tr><td><span class="num orange">2</span></td><td>School fees (Primary 1 – Primary 2)</td><td><span class="price">UGX 355,000</span></td></tr>
+<tr><td><span class="num">3</span></td><td>School fees (Primary 3 – Primary 4)</td><td><span class="price">UGX 376,000</span></td></tr>
+<tr><td><span class="num orange">4</span></td><td>School fees (Primary 5 – Primary 6)</td><td><span class="price">UGX 400,000</span></td></tr>
+<tr><td><span class="num brown">5</span></td><td>School fees (Primary 7) <span class="badge">PLE CLASS</span></td><td><span class="price">UGX 600,000</span></td></tr>
+<tr><td><span class="num">6</span></td><td>Boarding</td><td><span class="price">UGX 600,000</span></td></tr>
+<tr><td><span class="num orange">7</span></td><td>A set of uniforms</td><td><span class="price">UGX 149,000</span></td></tr>
 </table>
 </div>
 </div>
@@ -155,16 +152,15 @@ footer strong{color:#FF7A00}
 <h2><span class="dot green"></span> Learning Materials & Other Requirements</h2>
 <p style="font-size:14px">What your child needs for class</p>
 <div class="fees-card">
-<div class="fees-card-head"><b>✦ LEARNING MATERIALS</b><span>PER TERM</span></div>
+<div class="fees-card-head"><b>LEARNING MATERIALS</b><span>PER TERM</span></div>
 <div class="fees-scroll">
 <table class="fees-table">
 <tr><th>CLASS</th><th>REQUIREMENTS</th><th>AMOUNT</th></tr>
-<tr><td><strong>Primary 1 & Primary 2</strong></td><td>📄 Ream of paper<br>📘 Workbooks</td><td><span class="price">UGX 20,000</span><br><span class="price">UGX 20,000</span></td></tr>
-<tr><td><strong>Primary 3, 4, 5 & 6</strong></td><td>📄 Ream of paper<br>📘 Workbooks<br>✏️ Class books & pens</td><td><span class="price">UGX 20,000</span><br><span class="price">UGX 20,000</span><br><span style="font-size:12px;color:#999">—</span></td></tr>
+<tr><td><strong>Primary 1 & Primary 2</strong></td><td>Ream of paper<br>Workbooks</td><td><span class="price">UGX 20,000</span><br><span class="price">UGX 20,000</span></td></tr>
+<tr><td><strong>Primary 3, 4, 5 & 6</strong></td><td>Ream of paper<br>Workbooks</td><td><span class="price">UGX 20,000</span><br><span class="price">UGX 20,000</span></td></tr>
 </table>
 </div>
 </div>
-<p class="fees-note">Note: The source document lists class books and pens for Primary 3 – Primary 6 but does not state a separate amount.</p>
 <div class="highlight"><strong style="color:#0F6B3A">Total materials for P1-P6:</strong> Ream + Workbooks = <strong>UGX 40,000</strong></div>
 </div>
 
@@ -220,4 +216,4 @@ window.open("https://wa.me/256776955990?text="+msg,"_blank");
 }
 </script>
 </body>
-</html>
+  </html>
